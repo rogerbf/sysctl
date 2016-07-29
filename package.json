@@ -1,7 +1,7 @@
 {
   "name": "sysctl",
   "version": "0.0.1",
-  "description": "",
+  "description": "get or set kernel state",
   "main": "./dist/index.js",
   "scripts": {
     "test": "babel-node ./src/index.test.js | faucet",
