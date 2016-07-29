@@ -1,0 +1,42 @@
+{
+  "name": "sysctl",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "babel-node ./src/index.test.js | faucet",
+    "prebuild": "npm test && rimraf dist",
+    "build": "babel --ignore *.test.js --out-dir dist src",
+    "prepublish": "npm run build",
+    "watch:test": "nodemon -x 'npm test'"
+  },
+  "keywords": [],
+  "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.11.4",
+    "babel-preset-es2015": "6.9.0",
+    "faucet": "0.0.1",
+    "nodemon": "1.10.0",
+    "rimraf": "2.5.4",
+    "tape": "4.6.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {}
+}
