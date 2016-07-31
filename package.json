@@ -38,5 +38,8 @@
       "es2015"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "deep-assign": "2.0.0",
+    "dotpath-object-create": "0.0.1"
+  }
 }

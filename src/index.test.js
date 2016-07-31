@@ -1,6 +1,7 @@
 const test = require('tape')
+const parse = require('./lib/parser.js')
 
-test('A passing test.', assert => {
-  assert.pass('This test will pass.')
+test('parse()', assert => {
+  assert.ok(typeof parse() === 'string')
   assert.end()
 })
