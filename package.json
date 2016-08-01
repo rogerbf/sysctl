@@ -1,7 +1,7 @@
 {
   "name": "sysctl",
   "version": "0.0.1",
-  "description": "get or set kernel state",
+  "description": "get kernel state",
   "main": "./dist/index.js",
   "scripts": {
     "test": "babel-node ./src/index.test.js | faucet",
@@ -41,5 +41,16 @@
   "dependencies": {
     "deep-assign": "2.0.0",
     "dotpath-object-create": "0.0.1"
-  }
+  },
+  "bin": {
+    "sysctl-json": "./dist/bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerbf/sysctl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogerbf/sysctl/issues"
+  },
+  "homepage": "https://github.com/rogerbf/sysctl#readme"
 }
