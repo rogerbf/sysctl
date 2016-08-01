@@ -1,7 +1,7 @@
 const test = require('tape')
-const parse = require('./lib/parser.js')
+const sysctl = require('./index.js')
 
-test('parse()', assert => {
-  assert.ok(typeof parse() === 'string')
+test('sysctl()', assert => {
+  assert.ok(typeof sysctl() === 'object')
   assert.end()
 })
